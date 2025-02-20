@@ -1,0 +1,2 @@
+#ran by data\thescarengine\function\internal\car\color\update_main.mcfunction
+$tag @e[tag=datapack.thescarengine.car.parts,x=0,scores={datapack.temp.thecarengine.car.id=$(id)},type=item_display] add datapack.thescarengine.car.color.update.selected

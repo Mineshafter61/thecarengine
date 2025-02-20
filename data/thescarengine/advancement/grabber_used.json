@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "grabber_used": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "predicates": {
+                "minecraft:custom_data": "{thescarengine:\"grabber\"}"
+              }
+            }
+          }
+        },
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{thescarengine:\"grabber\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thescarengine:internal/car_item/grabber/triggered"
+  }
+}

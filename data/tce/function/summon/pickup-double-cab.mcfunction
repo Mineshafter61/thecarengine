@@ -1,0 +1,1 @@
+function thescarengine:cars/pickup-double-cab/summon

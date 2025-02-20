@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"IPI",
+		"IBI",
+		" R "
+	],
+	"key": {
+		"I": {
+			"item": "minecraft:iron_ingot"
+		},
+		"B": {
+			"item": "minecraft:iron_block"
+		},
+		"R": {
+			"item": "minecraft:redstone_block"
+		},
+		"P": {
+			"item": "minecraft:piston"
+		}
+	},
+	"result": {
+		"id": "minecraft:shears",
+		"components": {
+			"minecraft:item_name": "{\"text\":\"Vehicle Relocator\",\"color\":\"#FFC757\"}",
+			"minecraft:lore": [
+				"{\"text\":\"Right-click at a vehicle\",\"color\":\"gray\",\"italic\":false}",
+				"{\"text\":\"to pick it up as an item\",\"color\":\"gray\",\"italic\":false}"
+			],
+			"minecraft:max_damage": 1,
+			"minecraft:custom_data": "{thescarengine:\"relocator\"}"
+		}
+	}
+}

@@ -1,0 +1,3 @@
+scoreboard players set @s datapack.temp.thecarengine.car.wheel_turning 0
+execute store result storage thescarengine:temp data.wheels_turn float 0.0001 run scoreboard players get @s datapack.temp.thecarengine.car.dir
+execute as @e[tag=datapack.thescarengine.car.parts.selected,tag=datapack.thescarengine.car.parts.turn_wheel,type=item_display,x=0] on passengers run data modify entity @s Rotation[0] set from storage thescarengine:temp data.wheels_turn

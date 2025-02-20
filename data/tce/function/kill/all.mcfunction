@@ -1,0 +1,1 @@
+function thescarengine:kill_all

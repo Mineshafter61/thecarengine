@@ -1,0 +1,1 @@
+$execute as @e[tag=datapack.thescarengine.car.parts.selected,type=item_display,x=0] at @s run tp ~$(X) ~ ~

@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"[","color":"gray"},{"text":"T","color":"#01BABA"},{"text":"C","color":"#54DCDC"},{"text":"E","color":"#93FFFF"},{"text":"] ","color":"gray"},{"text":"Item added to inventory: [","color":"gray"},{"text":"Vehicle Relocator\u00a77]","color":"#FFC757"}]

@@ -1,0 +1,1 @@
+$execute as 0cd3bf27-1ebc-4615-b171-1db60b2e9c67 rotated as @s rotated ~ 0 positioned 0.0 0.0 0.0 run tp ^ ^ ^$(speed)

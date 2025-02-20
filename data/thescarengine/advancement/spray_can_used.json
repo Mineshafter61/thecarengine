@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "spray_can_used": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:leather_horse_armor",
+          "predicates": {
+            "minecraft:custom_data": "{thescarengine:\"spray_can\"}"
+          }
+        },
+        "entity": {
+          "nbt": "{Tags:[\"datapack.thescarengine.car.parts.dye_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thescarengine:internal/car_item/spray_scan/triggered"
+  }
+}

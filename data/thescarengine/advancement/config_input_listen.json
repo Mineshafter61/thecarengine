@@ -1,0 +1,11 @@
+{
+	"parent": "thescarengine:config_input_enable",
+	"criteria": {
+		"config_input_listen": {
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"rewards": {
+		"function": "thescarengine:commands/config/input/triggered"
+	}
+}

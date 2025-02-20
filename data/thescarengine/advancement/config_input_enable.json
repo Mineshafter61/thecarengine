@@ -1,0 +1,7 @@
+{
+	"criteria": {
+		"config_input_enable": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

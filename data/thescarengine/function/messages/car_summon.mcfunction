@@ -1,0 +1,2 @@
+#this message shows up when car summoned with tce:summon/ command
+tellraw @s ["",{"text":"[","color":"gray"},{"text":"T","color":"#01BABA"},{"text":"C","color":"#54DCDC"},{"text":"E","color":"#93FFFF"},{"text":"] Summoned vehicle","color":"gray"}]

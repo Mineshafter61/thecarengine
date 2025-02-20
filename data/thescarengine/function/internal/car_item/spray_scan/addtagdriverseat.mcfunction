@@ -1,0 +1,2 @@
+#ran by data\thescarengine\function\internal\car_item\spray_scan\asinteraction.mcfunction
+$tag @n[tag=datapack.thescarengine.car.parts.driver_seat,x=0,scores={datapack.temp.thecarengine.car.id=$(id)},type=item_display] add datapack.thescarengine.internal.item.spay_can.selected_driver

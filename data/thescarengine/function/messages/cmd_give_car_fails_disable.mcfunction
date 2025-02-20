@@ -1,0 +1,2 @@
+#when car item placement fails
+tellraw @s ["",{"text":"[","color":"gray"},{"text":"T","color":"#01BABA"},{"text":"C","color":"#54DCDC"},{"text":"E","color":"#93FFFF"},{"text":"] ","color":"gray"},{"text":"Can't give [car_item] while disabled ","color":"red"},{"text":"[ENABLE]","hoverEvent": {"action": "show_text","contents": "Click to enable"},"clickEvent": {"action": "run_command","value": "/function tce:on"},"color": "gray"}]

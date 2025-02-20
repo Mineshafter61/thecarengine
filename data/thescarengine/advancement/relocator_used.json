@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"relocator_used": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": "{thescarengine:\"relocator\"}"
+					}
+				},
+				"entity": {
+					"type": "minecraft:interaction",
+					"vehicle": {
+						"nbt": "{Tags:[\"datapack.thescarengine.car.parts\"]}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "thescarengine:internal/car_item/relocator/triggered"
+	}
+}

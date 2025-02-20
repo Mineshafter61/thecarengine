@@ -1,0 +1,1 @@
+function thescarengine:kill_near_macro with storage thescarengine:temp p.rules

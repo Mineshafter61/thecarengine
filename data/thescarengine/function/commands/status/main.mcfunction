@@ -1,0 +1,2 @@
+execute if data storage thescarengine:temp {ON:0} run return run function thescarengine:messages/status_disable
+execute if data storage thescarengine:temp {ON:1} run function thescarengine:commands/status/get

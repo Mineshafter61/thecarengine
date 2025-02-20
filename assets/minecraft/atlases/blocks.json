@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "tce/vehicles/pickup"
+    },
+	{
+      "type": "single",
+      "resource": "tce/vehicles/sedan"
+    },
+    {
+      "type": "single",
+      "resource": "tce/wheels/wheel_1"
+    },
+    {
+      "type": "single",
+      "resource": "tce/items/spray_can"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+#this message shows up when player uses tce:info while tce:off
+tellraw @s ["",{"text":"----------[","color":"gray"},{"text":" T","color":"#01BABA"},{"text":"C","color":"#54DCDC"},{"text":"E ","color":"#A6FDFD"},{"text":"]----------","color":"gray"},{"text":"\n\n"},{"text":"  Status:","color":"#A6FDFD"},{"text":" Disabled","color":"red"},{"text":"\n\n--------------------------","color":"gray"}]
