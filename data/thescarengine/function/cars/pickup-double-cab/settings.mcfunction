@@ -85,7 +85,7 @@ data modify storage thescarengine:temp settings.placed_item set value {component
 # if true, you must have file named customfunc.mcfunction in this directory
 # the script in function will run after car procress every tick
 
-data modify storage thescarengine:temp settings.customfunc set value true
+data modify storage thescarengine:temp settings.customfunc set value "customfunc"
 
 
 
