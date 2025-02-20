@@ -1,2 +1,0 @@
-$say $(test)
-say b 
