@@ -1,5 +1,5 @@
-execute if data storage thescarengine:temp {ON:0} run function thescarengine:messages/tce_already_off
-execute if data storage thescarengine:temp {ON:0} run return -1
+execute unless data storage thescarengine:temp {ON:1} run function thescarengine:messages/tce_already_off
+execute unless data storage thescarengine:temp {ON:1} run return -1
 
 
 execute if score .perm_chunkalreadyloaded datapack.temp.thecarengine.main matches 1 at 0cd3bf27-1ebc-4615-b171-1db60b2e9c67 run forceload remove 0 0

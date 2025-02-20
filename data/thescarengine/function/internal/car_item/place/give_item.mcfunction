@@ -1,6 +1,6 @@
 
 #if datapack is disblae, and trying to get item, error
-execute if data storage thescarengine:temp {ON:0} run return run function thescarengine:messages/cmd_give_car_fails_disable
+execute unless data storage thescarengine:temp {ON:1} run return run function thescarengine:messages/cmd_give_car_fails_disable
 
 
 tag @s add datapack.temp.thecarengine.item.relocator.using

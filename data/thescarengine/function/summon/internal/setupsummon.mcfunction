@@ -4,8 +4,8 @@ execute as @e[tag=datapack.thescarengine.car.parts] unless score @s datapack.tem
 
 
 #do summon thing
-execute if data storage thescarengine:temp {ON:0} run function thescarengine:messages/car_summon_fails_disable
-execute if data storage thescarengine:temp {ON:0} run return -1
+execute unless data storage thescarengine:temp {ON:1} run function thescarengine:messages/car_summon_fails_disable
+execute unless data storage thescarengine:temp {ON:1} run return -1
 
 execute unless score .internal.car_item.notsummonshowgive datapack.temp.thecarengine.main matches 1 run function thescarengine:messages/car_summon
 scoreboard players add .gobal_id datapack.temp.thecarengine.main 1
