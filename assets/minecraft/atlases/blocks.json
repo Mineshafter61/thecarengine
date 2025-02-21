@@ -15,6 +15,10 @@
     {
       "type": "single",
       "resource": "tce/items/spray_can"
+    },
+    {
+      "type": "single",
+      "resource": "tce/engines/engine_i6_1"
     }
   ]
 }

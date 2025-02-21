@@ -9,8 +9,8 @@ function thescarengine:commands/config/macro_bool_rules with storage thescarengi
 data modify storage thescarengine:temp data.config.in.booltype set value {id:"tce_disable_confirmation",display:"  tceDisableConfirmation       ",info:"If true, the /function tce:off command will require confirmation before executing."}
 function thescarengine:commands/config/macro_bool_rules with storage thescarengine:temp data.config.in.booltype
 
-data modify storage thescarengine:temp data.config.in.booltype set value {id:"use_dynamic_collision_check",display:"  useDynamicCollisionCheck    ",info:"This setting cannot be changed and will be removed in a future update."}
-function thescarengine:commands/config/macro_bool_rules with storage thescarengine:temp data.config.in.booltype
+#data modify storage thescarengine:temp data.config.in.booltype set value {id:"use_dynamic_collision_check",display:"  useDynamicCollisionCheck    ",info:"This setting cannot be changed and will be removed in a future update."}
+#function thescarengine:commands/config/macro_bool_rules with storage thescarengine:temp data.config.in.booltype
 
 data modify storage thescarengine:temp data.config.in.booltype set value {id:"player_rotate_with_vehicle",display:"  playerRotateWithVehicle      ",info:"[experimental, buggy, laggy] If true, player's rotation will rotate with the vehicle."}
 function thescarengine:commands/config/macro_bool_rules with storage thescarengine:temp data.config.in.booltype
@@ -24,7 +24,7 @@ function thescarengine:commands/config/macro_input_rules with storage thescareng
 data modify storage thescarengine:temp data.config.in.input set value {id:"unload_vehicle_after_ticks",display:"  unloadVehicleAfterTicks      ",info:"Amount of ticks before vehicle unload after no inputs"}
 function thescarengine:commands/config/macro_input_rules with storage thescarengine:temp data.config.in.input
 
-data modify storage thescarengine:temp data.config.in.input set value {id:"snap_vehicle_rotation_range",display:"  snapVehicleRotationRange   ",info:"PlaceHolder"}
+data modify storage thescarengine:temp data.config.in.input set value {id:"snap_vehicle_rotation_range",display:"  snapVehicleRotationRange   ",info:"A positive range in degrees, defaulting to 0. Recommended not to exceed 45. When set, the vehicle will attempt to snap its rotation to the nearest right angle (0°, 90°, 180°, or 270°)."}
 function thescarengine:commands/config/macro_input_rules with storage thescarengine:temp data.config.in.input
 
 
