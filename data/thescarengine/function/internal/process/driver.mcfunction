@@ -2,14 +2,29 @@
 #execute summon marker run function thescarengine:internal/process/keypress_check
 
 
-execute store result entity 0cd3bf27-1ebc-4615-b171-1db60b2e9c67 Pos[0] double 0.001 run data get entity @s Motion[0] 50000
-execute store result entity 0cd3bf27-1ebc-4615-b171-1db60b2e9c67 Pos[2] double 0.001 run data get entity @s Motion[2] 50000
 
 
-execute as 0cd3bf27-1ebc-4615-b171-1db60b2e9c67 at @s facing 0.0 ~ 0.0 run tp @s ~ 0 ~ ~180 ~
 
-scoreboard players set .current_keypressed datapack.temp.thecarengine.main 0
 
-execute as 0cd3bf27-1ebc-4615-b171-1db60b2e9c67 unless entity @s[x=0,y=0,z=0,distance=..0.00000001] run scoreboard players set .current_keypressed datapack.temp.thecarengine.main 1
+function thescarengine:internal/process/reset_key
 
-execute if score .current_keypressed datapack.temp.thecarengine.main matches 1 run function thescarengine:internal/process/keypressed
+execute if predicate {"condition": "minecraft:entity_properties","entity": "this","predicate": {"type_specific": {"type": "minecraft:player","input": {"forward":true}}}} run scoreboard players set .keyW datapack.temp.thecarengine.main 1
+execute if predicate {"condition": "minecraft:entity_properties","entity": "this","predicate": {"type_specific": {"type": "minecraft:player","input": {"backward":true}}}} run scoreboard players set .keyS datapack.temp.thecarengine.main 1
+execute if predicate {"condition": "minecraft:entity_properties","entity": "this","predicate": {"type_specific": {"type": "minecraft:player","input": {"left":true}}}} run scoreboard players set .keyA datapack.temp.thecarengine.main 1
+execute if predicate {"condition": "minecraft:entity_properties","entity": "this","predicate": {"type_specific": {"type": "minecraft:player","input": {"right":true}}}} run scoreboard players set .keyD datapack.temp.thecarengine.main 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

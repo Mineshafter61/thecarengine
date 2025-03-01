@@ -1,0 +1,1 @@
+execute as ed7a7646-09fb-4298-8fd6-b33d4e8435b0 run function thescarengine:tests/removeduration2

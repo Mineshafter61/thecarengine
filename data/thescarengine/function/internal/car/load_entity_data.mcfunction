@@ -14,7 +14,7 @@ data modify storage thescarengine:temp data.current_car set from entity @s item.
 
 scoreboard players set .current_gear datapack.temp.thecarengine.main 0
 
-
+scoreboard players operation .current_oldcarrot datapack.temp.thecarengine.main = @s datapack.temp.thecarengine.car.dir
 
 
 execute if score @s datapack.temp.thecarengine.car.gear_timer matches 1.. run scoreboard players remove @s datapack.temp.thecarengine.car.gear_timer 1
@@ -40,6 +40,10 @@ execute unless score .rule.snap_vehicle_rotation_range datapack.temp.thecarengin
 #reset wheel turns
 execute if score @s datapack.temp.thecarengine.car.wheel_turning matches 1 if score .keyA datapack.temp.thecarengine.main matches 0 if score .keyD datapack.temp.thecarengine.main matches 0 run function thescarengine:internal/car/keypressed/reset_turn_wheel
 
+#rot player
+scoreboard players operation .current_oldcarrot datapack.temp.thecarengine.main -= @s datapack.temp.thecarengine.car.dir
+execute if score .rule.player_rotate_with_vehicle datapack.temp.thecarengine.main matches 1 unless score .current_oldcarrot datapack.temp.thecarengine.main matches 0 run function thescarengine:internal/car/rot_player/main
+
 
 #friction and wheel rotation
 execute unless score @s datapack.temp.thecarengine.car.speed matches 0 run function thescarengine:internal/car/friction/main
@@ -53,7 +57,6 @@ execute store result score test datapack.temp.thecarengine.main at @e[tag=datapa
 execute if score .current_hassupportblock datapack.temp.thecarengine.main matches 0 run scoreboard players remove @s datapack.temp.thecarengine.car.yv 500
 
 execute unless score @s datapack.temp.thecarengine.car.yv matches 0 run function thescarengine:internal/car/gravity/main
-
 
 
 #get speed in km/h
@@ -78,6 +81,9 @@ execute unless score @s datapack.temp.thecarengine.car.yv matches 0 run scoreboa
 execute if predicate {"condition": "minecraft:entity_properties","entity": "this","predicate": {"passenger": {"type": "minecraft:player"}}} run scoreboard players operation @s datapack.temp.thecarengine.car.loaded = .rule.unload_vehicle_after_ticks datapack.temp.thecarengine.main
 scoreboard players remove @s datapack.temp.thecarengine.car.loaded 1
 execute if score @s datapack.temp.thecarengine.car.loaded matches -1 run scoreboard players reset @s datapack.temp.thecarengine.car.loaded
+
+#rot player
+
 
 
 

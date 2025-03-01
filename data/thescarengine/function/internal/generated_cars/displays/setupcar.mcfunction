@@ -17,7 +17,7 @@ execute if score .internal.summoncarwithnbt datapack.temp.thecarengine.main matc
 
 
 #teleort duration
-execute as @e[tag=datapack.thescarengine.car.parts.summoned] on passengers run data merge entity @s {teleport_duration:1}
+execute as @e[tag=datapack.thescarengine.car.parts.summoned] unless entity @s[tag=datapack.thescarengine.car.parts.wheel] on passengers run data merge entity @s {teleport_duration:1}
 #link id
 scoreboard players operation @e[tag=datapack.thescarengine.car.parts.summoned] datapack.temp.thecarengine.car.id = .gobal_id datapack.temp.thecarengine.main
 #set scores

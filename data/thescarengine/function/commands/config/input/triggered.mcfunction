@@ -1,6 +1,6 @@
 
 
-execute unless score @s datapack.temp.thecarengine.config.inputing matches 1 run return 0
+execute unless entity @s[tag=datapack.temp.thecarengine.config.inputing] run return 0
 
 
 
@@ -18,5 +18,6 @@ execute at @s summon item_display run function thescarengine:commands/config/inp
 tag @s remove self
 
 clear @s *[minecraft:custom_data={thescarengine:"config/input"}]
+tag @s remove datapack.temp.thecarengine.config.inputing
 
 function thescarengine:commands/config/input/setinput

@@ -1,5 +1,6 @@
 
 scoreboard players operation .current_dir datapack.temp.thecarengine.main = @s datapack.temp.thecarengine.car.dir
+#scoreboard players operation .current_snap_olddir datapack.temp.thecarengine.main = @s datapack.temp.thecarengine.car.dir
 
 execute if score .current_dir datapack.temp.thecarengine.main matches 0 run return 0
 execute if score .current_dir datapack.temp.thecarengine.main matches 900000 run return 0
@@ -38,7 +39,7 @@ execute if score .current_dir datapack.temp.thecarengine.main matches 2700000 ru
 scoreboard players set .current_snap_dir datapack.temp.thecarengine.main -1
 #0
 execute if score .current_dir datapack.temp.thecarengine.main >= .internal.config.snap_vehicle_rotation.min.0 datapack.temp.thecarengine.main run scoreboard players set .current_snap_dir datapack.temp.thecarengine.main 3600000
-execute if score .current_dir datapack.temp.thecarengine.main <= .internal.config.snap_vehicle_rotation.max.0 datapack.temp.thecarengine.main run scoreboard players set .current_snap_dir datapack.temp.thecarengine.main 0
+execute if score .current_dir datapack.temp.thecarengine.main <= .internal.config.snap_vehicle_rotation.max.0 datapack.temp.thecarengine.main run scoreboard players set .current_snap_dir datapack.temp.thecarengine.main -1
 
 #90
 execute if score .current_dir datapack.temp.thecarengine.main >= .internal.config.snap_vehicle_rotation.min.90 datapack.temp.thecarengine.main if score .current_dir datapack.temp.thecarengine.main <= .internal.config.snap_vehicle_rotation.max.90 datapack.temp.thecarengine.main run scoreboard players set .current_snap_dir datapack.temp.thecarengine.main 900000
@@ -104,3 +105,7 @@ execute at @e[tag=datapack.thescarengine.car.parts.selected,tag=datapack.thescar
 execute if score .current_stepupallow datapack.temp.thecarengine.main matches 0 if score .current_stepup datapack.temp.thecarengine.main matches 0 run function thescarengine:internal/car/keypressed/revert_car_rot
 
 
+#scoreboard players operation .current_snap_olddir datapack.temp.thecarengine.main -= @s datapack.temp.thecarengine.car.dir
+#scoreboard players operation .current_snap_olddir datapack.temp.thecarengine.main *= .-1 datapack.temp.thecarengine.const
+#execute store result storage thescarengine:temp data.rot_player.angle double 0.0001 run scoreboard players get .current_snap_olddir datapack.temp.thecarengine.main
+#function thescarengine:internal/car/rot_player/macro with storage thescarengine:temp data.rot_player

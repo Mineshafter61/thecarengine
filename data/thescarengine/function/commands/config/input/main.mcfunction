@@ -3,7 +3,7 @@ clear @s minecraft:writable_book[minecraft:custom_data={thescarengine:"config/in
 
 function thescarengine:messages/config_input_book
 
-scoreboard players set @s datapack.temp.thecarengine.config.inputing 1
+tag @s add datapack.temp.thecarengine.config.inputing
 
 #save item
 data modify storage thescarengine:temp data.config.input.macro.uuid set from entity @s UUID

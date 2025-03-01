@@ -43,8 +43,7 @@ execute at @e[tag=datapack.thescarengine.car.parts.selected,tag=datapack.thescar
 
 execute if score .current_stepupallow datapack.temp.thecarengine.main matches 0 if score .current_stepup datapack.temp.thecarengine.main matches 0 run function thescarengine:internal/car/keypressed/revert_car_rot
 
-scoreboard players operation .current_turn datapack.temp.thecarengine.main *= .-1 datapack.temp.thecarengine.const
-execute if score .rule.player_rotate_with_vehicle datapack.temp.thecarengine.main matches 1 unless score .current_turn datapack.temp.thecarengine.main matches 0 as @e[tag=datapack.thescarengine.car.parts.selected,x=0,type=item_display] on passengers if entity @s[type=player] run function thescarengine:internal/car/rot_player/main
+#execute if score .rule.player_rotate_with_vehicle datapack.temp.thecarengine.main matches 1 unless score .current_turn datapack.temp.thecarengine.main matches 0 run function thescarengine:internal/car/rot_player/main
 #tellraw @a {"score": {"name": ".current_turn","objective": "datapack.temp.thecarengine.main"}}
 #scoreboard players operation .current_turn datapack.temp.thecarengine.main *= .-1 datapack.temp.thecarengine.const
 #scoreboard players set .current_rotplayer datapack.temp.thecarengine.main 0

@@ -1,9 +1,11 @@
 scoreboard players set @s datapack.temp.thecarengine.car.speed 0
 scoreboard players set @s datapack.temp.thecarengine.car.wheel_rot 0
+scoreboard players set @s datapack.temp.thecarengine.car.wheel_pitch 0
 scoreboard players set @s datapack.temp.thecarengine.car.yv 0
 scoreboard players set @s datapack.temp.thecarengine.car.gear 0
 scoreboard players set @s datapack.temp.thecarengine.car.gear_timer 0
 scoreboard players set @s datapack.temp.thecarengine.car.loaded 100
+scoreboard players set @s datapack.temp.thecarengine.car.isspeedwheel 0
 
 
 scoreboard players set @s datapack.temp.thecarengine.car.dir 0

@@ -3,7 +3,6 @@ advancement revoke @s only thescarengine:car_item_used
 
 
 
-
 execute unless score @s datapack.temp.thecarengine.car_item.place.cooldown matches -2147483648..2147483647 run function thescarengine:internal/car_item/place/main
 
 scoreboard players set @s datapack.temp.thecarengine.car_item.place.cooldown 2

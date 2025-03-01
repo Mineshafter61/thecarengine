@@ -5,7 +5,7 @@
 #get data from player's item
 data modify storage thescarengine:temp data.internal.car_item.used_data set from entity @s SelectedItem
 #let inr = (interaction rage * 2)
-execute store result score .internal.car_item.place.player.reach datapack.temp.thecarengine.main run attribute @s minecraft:player.block_interaction_range get 5
+execute store result score .internal.car_item.place.player.reach datapack.temp.thecarengine.main run attribute @s minecraft:block_interaction_range get 5
 #inr += 2
 scoreboard players add .internal.car_item.place.player.reach datapack.temp.thecarengine.main 2
 
@@ -73,8 +73,6 @@ execute if score .internal.car_item.place.collide datapack.temp.thecarengine.mai
 execute if score .internal.car_item.place.collide datapack.temp.thecarengine.main matches 1 run function thescarengine:internal/car_item/place/clip
 # car collide
 execute if score .internal.car_item.place.collide datapack.temp.thecarengine.main matches 0 run function thescarengine:internal/car_item/place/noclip
-
-
 
 
 

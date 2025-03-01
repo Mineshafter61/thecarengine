@@ -19,6 +19,7 @@ scoreboard objectives remove datapack.temp.thecarengine.const
 scoreboard objectives remove datapack.temp.thecarengine.car.speed
 scoreboard objectives remove datapack.temp.thecarengine.car.dir
 scoreboard objectives remove datapack.temp.thecarengine.car.wheel_rot
+scoreboard objectives remove datapack.temp.thecarengine.car.wheel_pitch
 scoreboard objectives remove datapack.temp.thecarengine.car.yv
 scoreboard objectives remove datapack.temp.thecarengine.car.id
 scoreboard objectives remove datapack.temp.thecarengine.car.gear
@@ -31,3 +32,4 @@ scoreboard objectives remove datapack.temp.thecarengine.car.loaded
 scoreboard objectives remove datapack.temp.thecarengine.car_item.place.cooldown
 
 data remove storage thescarengine:temp data
+data remove storage thescarengine:temp settings

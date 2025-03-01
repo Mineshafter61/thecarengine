@@ -52,16 +52,18 @@ scoreboard players set .3600000 datapack.temp.thecarengine.const 3600000
 scoreboard objectives add datapack.temp.thecarengine.car.speed dummy
 scoreboard objectives add datapack.temp.thecarengine.car.dir dummy
 scoreboard objectives add datapack.temp.thecarengine.car.wheel_rot dummy
+scoreboard objectives add datapack.temp.thecarengine.car.wheel_pitch dummy
 scoreboard objectives add datapack.temp.thecarengine.car.yv dummy
 scoreboard objectives add datapack.temp.thecarengine.car.id dummy
 scoreboard objectives add datapack.temp.thecarengine.car.gear dummy
 scoreboard objectives add datapack.temp.thecarengine.car.gear_timer dummy
 scoreboard objectives add datapack.temp.thecarengine.car.wheel_turning dummy
 scoreboard objectives add datapack.temp.thecarengine.car.loaded dummy
+scoreboard objectives add datapack.temp.thecarengine.car.isspeedwheel dummy
 
 #per player
 scoreboard objectives add datapack.temp.thecarengine.car_item.place.cooldown dummy
-scoreboard objectives add datapack.temp.thecarengine.config.inputing dummy
+scoreboard objectives add datapack.temp.thecarengine.car.wheel.subticker dummy
 
 #pear interaction
 scoreboard objectives add datapack.temp.thecarengine.item.relocator.interaction dummy

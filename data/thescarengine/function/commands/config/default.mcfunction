@@ -7,4 +7,5 @@ execute unless data storage thescarengine:temp p.rules.collision_collide_collisi
 execute unless data storage thescarengine:temp p.rules.kill_near_distance run data modify storage thescarengine:temp p.rules.kill_near_distance set value 10
 execute unless data storage thescarengine:temp p.rules.unload_vehicle_after_ticks run data modify storage thescarengine:temp p.rules.unload_vehicle_after_ticks set value 100
 execute unless data storage thescarengine:temp p.rules.snap_vehicle_rotation_range run data modify storage thescarengine:temp p.rules.snap_vehicle_rotation_range set value 0
+execute unless data storage thescarengine:temp p.rules.kill_vehicle_under_y run data modify storage thescarengine:temp p.rules.kill_vehicle_under_y set value -128
 

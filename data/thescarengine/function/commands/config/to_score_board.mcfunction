@@ -34,3 +34,7 @@ scoreboard players set .internal.config.snap_vehicle_rotation.min.270 datapack.t
 scoreboard players set .internal.config.snap_vehicle_rotation.max.270 datapack.temp.thecarengine.main 2700000
 scoreboard players operation .internal.config.snap_vehicle_rotation.min.270 datapack.temp.thecarengine.main -= .rule.snap_vehicle_rotation_range datapack.temp.thecarengine.main
 scoreboard players operation .internal.config.snap_vehicle_rotation.max.270 datapack.temp.thecarengine.main += .rule.snap_vehicle_rotation_range datapack.temp.thecarengine.main
+
+
+
+execute store result score .rule.kill_vehicle_under_y datapack.temp.thecarengine.main run data get storage thescarengine:temp p.rules.kill_vehicle_under_y 10000

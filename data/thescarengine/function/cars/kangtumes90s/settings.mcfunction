@@ -28,6 +28,9 @@ data modify storage thescarengine:temp settings.backward_brake set value 0.02
 # Friction (speed reduction when no input is given)
 data modify storage thescarengine:temp settings.friction set value 0.005
 
+# If car has more speed than this value (b/t), interpolation will set to 1 for smoothness
+data modify storage thescarengine:temp settings.wheel_interpolation_range set value 1
+
 # Maximum forward speed
 data modify storage thescarengine:temp settings.max_vel set value 1.388
 
