@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench by melonapple",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "tce/vehicles/sedan"
+		"0": "tce:vehicles/sedan"
 	},
 	"elements": [
 		{

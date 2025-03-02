@@ -47,8 +47,11 @@ data modify storage thescarengine:temp settings.wheel_rot set value {div: 1, mul
 # Maximum wheel turn angle (degrees)
 data modify storage thescarengine:temp settings.wheel_turn set value 30
 
+# If car has more speed than this value (b/t), interpolation will set to 1 for smoothness
+data modify storage thescarengine:temp settings.wheel_interpolation_range set value 0.833
+
 # Steering response (adjusts turn speed based on velocity)
-data modify storage thescarengine:temp settings.turn set value {str: 0, div: 1, mul: 6, max: 4}
+data modify storage thescarengine:temp settings.turn set value {str: 0, div: 1, mul: 7, max: 5}
 
 # ================================
 # Car Pre Colors
@@ -74,7 +77,7 @@ data modify storage thescarengine:temp settings.placed_item.id set value "minecr
 data modify storage thescarengine:temp settings.item_color set value "datapack.thescarengine.car.parts.pivot"
 
 # Item data ()
-data modify storage thescarengine:temp settings.placed_item set value {components: {"minecraft:custom_model_data": 10001, "minecraft:item_name": '{"color":"#CCFFFF","text":"Sedan"}', "minecraft:lore": ['{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right click to place vehicle","underlined":false}],"text":""}', '""', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Vehicle Info:","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Max Speed: 150km/h","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Health: 500","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Fuel: 55L/55L","underlined":false}],"text":""}'], "minecraft:max_stack_size": 1,"hide_additional_tooltip":{}}, count: 1, id: "minecraft:firework_star"}
+data modify storage thescarengine:temp settings.placed_item set value {components: {"minecraft:custom_model_data":{floats:[10001]}, "minecraft:item_name": '{"color":"#CCFFFF","text":"Sedan"}', "minecraft:lore": ['{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right click to place vehicle","underlined":false}],"text":""}', '""', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Vehicle Info:","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Max Speed: 150km/h","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Health: 500","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Fuel: 55L/55L","underlined":false}],"text":""}'], "minecraft:max_stack_size": 1,"hide_additional_tooltip":{}}, count: 1, id: "minecraft:firework_star"}
 
 
 

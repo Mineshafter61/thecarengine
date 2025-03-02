@@ -47,6 +47,9 @@ data modify storage thescarengine:temp settings.wheel_rot set value {div: 1, mul
 # Maximum wheel turn angle (degrees)
 data modify storage thescarengine:temp settings.wheel_turn set value 30
 
+# If car has more speed than this value (b/t), interpolation will set to 1 for smoothness
+data modify storage thescarengine:temp settings.wheel_interpolation_range set value 0.833
+
 # Steering response (adjusts turn speed based on velocity)
 data modify storage thescarengine:temp settings.turn set value {str: 0, div: 1, mul: 6, max: 4}
 

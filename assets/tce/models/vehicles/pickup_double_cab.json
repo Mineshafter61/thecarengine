@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench by melonapple",
 	"texture_size": [128, 128],
 	"textures": {
-		"1": "tce/vehicles/pickup"
+		"1": "tce:vehicles/pickup_double_cab"
 	},
 	"elements": [
 		{

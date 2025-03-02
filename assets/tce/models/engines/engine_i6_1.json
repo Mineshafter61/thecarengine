@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench by melonapple",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "tce/engines/engine_i6_1",
-		"particle": "tce/engines/engine_i6_1"
+		"0": "tce:engines/engine_i6_1",
+		"particle": "tce:engines/engine_i6_1"
 	},
 	"elements": [
 		{

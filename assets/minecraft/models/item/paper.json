@@ -8,13 +8,13 @@
       "predicate": {
         "custom_model_data": 50000
       },
-      "model": "item/custom/tce/engines/engine_i6_1"
+      "model": "tce:engines/engine_i6_1"
     },
 	{
       "predicate": {
         "custom_model_data": 50001
       },
-      "model": "item/custom/tce/engines/engine_i4_1"
+      "model": "tce:engines/engine_i4_1"
     }
   ]
 }

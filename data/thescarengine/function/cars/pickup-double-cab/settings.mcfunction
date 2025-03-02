@@ -42,7 +42,7 @@ data modify storage thescarengine:temp settings.min_vel set value -0.5
 data modify storage thescarengine:temp settings.wheel_rot set value {div: 1, mul: 50}
 
 # If car has more speed than this value (b/t), interpolation will set to 1 for smoothness
-data modify storage thescarengine:temp settings.wheel_interpolation_range set value 1
+data modify storage thescarengine:temp settings.wheel_interpolation_range set value 0.833
 
 # Maximum wheel turn angle (degrees)
 data modify storage thescarengine:temp settings.wheel_turn set value 30
@@ -74,7 +74,7 @@ data modify storage thescarengine:temp settings.placed_item.id set value "minecr
 data modify storage thescarengine:temp settings.item_color set value "datapack.thescarengine.car.parts.pivot"
 
 # Item data ()
-data modify storage thescarengine:temp settings.placed_item set value {components: {"minecraft:custom_model_data": 10000, "minecraft:item_name": '{"color":"#CCFFFF","text":"Pickup (Double Cab)"}', "minecraft:lore": ['{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right click to place vehicle","underlined":false}],"text":""}', '""', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Vehicle Info:","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Max Speed: 150km/h","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Health: 500","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Fuel: 70L/70L","underlined":false}],"text":""}'], "minecraft:max_stack_size": 1,"hide_additional_tooltip":{}}, count: 1, id: "minecraft:firework_star"}
+data modify storage thescarengine:temp settings.placed_item set value {components: {"minecraft:custom_model_data":{floats:[10000]}, "minecraft:item_name": '{"color":"#CCFFFF","text":"Pickup (Double Cab)"}', "minecraft:lore": ['{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right click to place vehicle","underlined":false}],"text":""}', '""', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Vehicle Info:","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Max Speed: 150km/h","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Health: 500","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Fuel: 70L/70L","underlined":false}],"text":""}'], "minecraft:max_stack_size": 1,"hide_additional_tooltip":{}}, count: 1, id: "minecraft:firework_star"}
 
 
 

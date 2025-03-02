@@ -17,7 +17,7 @@
       "minecraft:dyed_color": {
         "rgb": 16777215
       },
-      "minecraft:custom_model_data": 50000,
+      "minecraft:custom_model_data": {"floats": [50000]},
       "minecraft:item_name": "{\"text\":\"Spray Can\",\"color\":\"#FCD9FF\"}",
       "minecraft:lore": [
         "{\"text\":\"Right-click at a vehicle part to paint\",\"color\":\"gray\",\"italic\":false}"
