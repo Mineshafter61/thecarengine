@@ -1,0 +1,2 @@
+data modify storage thescarengine:temp data.item.car_item.car_summon_name set value "kangtumes-90s"
+function thescarengine:internal/car_item/place/give_item with storage thescarengine:temp data.item.car_item

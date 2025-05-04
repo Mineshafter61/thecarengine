@@ -1,8 +1,6 @@
 #this function ran by pivot
 
-
-#chestlerv6
-#car_test
+#chestler-lr
 
 #collision
 

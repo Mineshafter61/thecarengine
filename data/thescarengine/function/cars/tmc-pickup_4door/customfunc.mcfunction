@@ -1,0 +1,3 @@
+execute on passengers if entity @s[type=interaction] rotated as @s at @s run particle minecraft:smoke ^-0.8 ^-0.26 ^-1.3 0 0 0 0 1 normal
+
+execute if score .keyS datapack.temp.thecarengine.main matches 1 if score @s datapack.temp.thecarengine.car.speed matches 11111.. as @e[tag=datapack.thescarengine.car.parts.wheel,tag=datapack.thescarengine.car.parts.selected] at @s run particle cloud ~ ~-0.4 ~ 0 0 0 0 1 normal

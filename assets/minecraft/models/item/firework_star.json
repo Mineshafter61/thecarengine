@@ -9,19 +9,43 @@
       "predicate": {
         "custom_model_data": 10000
       },
-      "model": "tce:vehicles/pickup_double_cab"
+      "model": "tce:vehicles/tmc-pickup_4door"
     },
 	{
       "predicate": {
         "custom_model_data": 10001
       },
-      "model": "tce:vehicles/sedan"
+      "model": "tce:vehicles/tmc-clarion"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 10002
+      },
+      "model": "tce:vehicles/tmc-pickup"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 10003
+      },
+      "model": "tce:vehicles/tmc-transbox"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 10004
+      },
+      "model": "tce:vehicles/chestler-lr"
     },
     {
       "predicate": {
         "custom_model_data": 20000
       },
       "model": "tce:wheels/wheel_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 20001
+      },
+      "model": "tce:wheels/wheel_2"
     }
   ]
 }

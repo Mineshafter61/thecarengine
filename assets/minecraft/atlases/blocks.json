@@ -2,15 +2,31 @@
   "sources": [
     {
       "type": "single",
-      "resource": "tce:vehicles/pickup_double_cab"
+      "resource": "tce:vehicles/tmc-pickup_4door"
     },
 	{
       "type": "single",
-      "resource": "tce:vehicles/sedan"
+      "resource": "tce:vehicles/tmc-clarion"
+    },
+	{
+      "type": "single",
+      "resource": "tce:vehicles/tmc-pickup"
+    },
+	{
+      "type": "single",
+      "resource": "tce:vehicles/tmc-transbox"
+    },
+	{
+      "type": "single",
+      "resource": "tce:vehicles/chestler-lr"
     },
     {
       "type": "single",
       "resource": "tce:wheels/wheel_1"
+    },
+	{
+      "type": "single",
+      "resource": "tce:wheels/wheel_2"
     },
     {
       "type": "single",
@@ -23,6 +39,34 @@
     {
       "type": "single",
       "resource": "tce:engines/engine_i4_1"
+    },
+    {
+      "type": "single",
+      "resource": "tce:engines/engine_v6_1"
+    },
+	{
+      "type": "single",
+      "resource": "tce:engines/engine_v8_1"
+    },
+    {
+      "type": "single",
+      "resource": "tce:badges/tmc_gray"
+    },
+    {
+      "type": "single",
+      "resource": "tce:badges/tmc_chrome"
+    },
+    {
+      "type": "single",
+      "resource": "tce:badges/chestler"
+    },
+    {
+      "type": "single",
+      "resource": "tce:badges/chestler_engine"
+    },
+    {
+      "type": "single",
+      "resource": "tce:badges/chestler_ornament"
     }
   ]
 }
