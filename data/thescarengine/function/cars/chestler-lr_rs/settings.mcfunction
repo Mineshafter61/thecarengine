@@ -77,7 +77,7 @@ data modify storage thescarengine:temp settings.placed_item.id set value "minecr
 data modify storage thescarengine:temp settings.item_color set value "datapack.thescarengine.car.parts.pivot"
 
 # Item data ()
-data modify storage thescarengine:temp settings.placed_item set value {components: {"minecraft:custom_model_data":{floats:[10004]}, "minecraft:item_name": '{"color":"#CCFFFF","text":"Chestler LR"}', "minecraft:lore": ['{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right-Click to place vehicle","underlined":false}],"text":""}', '""', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Vehicle Info:","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Brand: Chestler","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Type: Convertible","underlined":false}],"text":""}', '{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Max Speed: 180km/h","underlined":false}],"text":""}'], "minecraft:max_stack_size": 1,"hide_additional_tooltip":{}}, count: 1, id: "minecraft:firework_star"}
+data modify storage thescarengine:temp settings.placed_item set value {components: {"minecraft:custom_model_data":{floats:[10004]}, "minecraft:item_name": {"color":"#CCFFFF","text":"Chestler LR"}, "minecraft:lore": [{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right-Click to place vehicle","underlined":false}],"text":""}, "", {"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Vehicle Info:","underlined":false}],"text":""}, {"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Brand: Chestler","underlined":false}],"text":""}, {"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Type: Convertible","underlined":false}],"text":""}, {"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":" Max Speed: 180km/h","underlined":false}],"text":""}], "minecraft:max_stack_size": 1,"hide_additional_tooltip":{}}, count: 1, id: "minecraft:firework_star"}
 
 
 
@@ -86,13 +86,9 @@ data modify storage thescarengine:temp settings.placed_item set value {component
 # Custom functions
 # ================================
 
-#type: bool 
-#tell the system if there's custom script to run, 
+#type: bool
+#tell the system if theres custom script to run,
 # if true, you must have file named customfunc.mcfunction in this directory
 # the script in function will run after car procress every tick
 
 data modify storage thescarengine:temp settings.customfunc set value "customfunc"
-
-
-
-
