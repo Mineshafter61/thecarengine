@@ -2,9 +2,9 @@
 
 
 
-$execute if data storage thescarengine:temp {p:{rules:{$(id):0}}} run tellraw @s [{"text":"$(display)","color":"#A6FDFD","hoverEvent":{"action":"show_text","contents":{"text":"$(info)"}}},{"text":"true","color":"gray","clickEvent":{"action":"run_command","value":"/function thescarengine:commands/config/chattrigger/$(id)/1"}},{"text":" "},{"text":"false","color":"dark_aqua","underlined":true}]
+$execute if data storage thescarengine:temp {p:{rules:{$(id):0}}} run tellraw @s [{"text":"$(display)","color":"#A6FDFD","hover_event":{"action":"show_text","value":{"text":"$(info)"}}},{"text":"true","color":"gray","click_event":{"action":"run_command","command":"/function thescarengine:commands/config/chattrigger/$(id)/1"}},{"text":" "},{"text":"false","color":"dark_aqua","underlined":true}]
 
-$execute if data storage thescarengine:temp {p:{rules:{$(id):1}}} run tellraw @s [{"text":"$(display)","color":"#A6FDFD","hoverEvent":{"action":"show_text","contents":{"text":"$(info)"}}},{"text":"true","color":"dark_aqua","underlined":true},{"text":" "},{"text":"false","color":"gray","clickEvent":{"action":"run_command","value":"/function thescarengine:commands/config/chattrigger/$(id)/0"}}]
+$execute if data storage thescarengine:temp {p:{rules:{$(id):1}}} run tellraw @s [{"text":"$(display)","color":"#A6FDFD","hover_event":{"action":"show_text","value":{"text":"$(info)"}}},{"text":"true","color":"dark_aqua","underlined":true},{"text":" "},{"text":"false","color":"gray","click_event":{"action":"run_command","command":"/function thescarengine:commands/config/chattrigger/$(id)/0"}}]
 
 
 

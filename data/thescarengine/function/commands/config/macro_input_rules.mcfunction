@@ -3,7 +3,7 @@
 
 
 
-$tellraw @s [{"text":"$(display)","color":"#A6FDFD","hoverEvent":{"action":"show_text","contents":{"text":"$(info)"}}},{"storage":"thescarengine:temp","nbt":"p.rules.$(id)","color":"dark_aqua","underlined":true,"clickEvent":{"action":"run_command","value":"/function thescarengine:commands/config/chattrigger/$(id)/set"}}]
+$tellraw @s [{"text":"$(display)","color":"#A6FDFD","hover_event":{"action":"show_text","value":{"text":"$(info)"}}},{"storage":"thescarengine:temp","nbt":"p.rules.$(id)","color":"dark_aqua","underlined":true,"click_event":{"action":"run_command","command":"/function thescarengine:commands/config/chattrigger/$(id)/set"}}]
 
 
 

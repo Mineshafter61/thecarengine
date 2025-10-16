@@ -1,7 +1,7 @@
 #this message shows up when player uses tce:info while tce:on
 
 #tellraw @s "STAT: ENABLE"
-#tellraw @s ["MARKER LOCATION: ",{"nbt":"data.MARKER_DIMENSION","storage":"thescarengine:temp"},{"text":" [TP]","hoverEvent":{"action":"show_text","contents":"click to teleport to marker"},"clickEvent": {"action": "run_command","value": "/tp @s 0cd3bf27-1ebc-4615-b171-1db60b2e9c67"}}]
+#tellraw @s ["MARKER LOCATION: ",{"nbt":"data.MARKER_DIMENSION","storage":"thescarengine:temp"},{"text":" [TP]","hover_event":{"action":"show_text","value":"click to teleport to marker"},"click_event": {"action": "run_command","command": "/tp @s 0cd3bf27-1ebc-4615-b171-1db60b2e9c67"}}]
 #tellraw @s ["MOST ID: ",{"score":{"name":".gobal_id","objective":"datapack.temp.thecarengine.main"}}]
 
 #execute store result score .info_pivotcount datapack.temp.thecarengine.main if entity @e[tag=datapack.thescarengine.car.parts.pivot]
@@ -40,7 +40,6 @@ tellraw @s [{"text":"  Ticking Vehicle: ","color":"#A6FDFD"},{"score":{"name":".
 
 
 
-tellraw @s [{"color":"dark_aqua","text":"  [Teleport to Marker]","hoverEvent":{"action":"show_text","contents":[{"text":"/execute in "},{"nbt":"data.MARKER_DIMENSION","storage":"thescarengine:temp"},{"text":"  run tp @s 0 0 0"}]},"clickEvent": {"action": "run_command","value": "/tp @s 0cd3bf27-1ebc-4615-b171-1db60b2e9c67"}}]
+tellraw @s [{"color":"dark_aqua","text":"  [Teleport to Marker]","hover_event":{"action":"show_text","value":[{"text":"/execute in "},{"nbt":"data.MARKER_DIMENSION","storage":"thescarengine:temp"},{"text":"  run tp @s 0 0 0"}]},"click_event": {"action": "run_command","command": "/tp @s 0cd3bf27-1ebc-4615-b171-1db60b2e9c67"}}]
 
 tellraw @s [{"text":"\n"},{"text":"--------------------------","color":"gray"}]
-
